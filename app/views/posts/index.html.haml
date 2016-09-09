@@ -1,4 +1,7 @@
 %h1 All Posts 
 -@posts.each do |post|
- %p=link_to post.title
+ %h2=link_to post.title
+ %p Published at
+ =time_ago_in_words(post.created_at)
+ %h4 ago
  
