@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+body {
+    font-family: 'Baloo Tamma', cursive;
+
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1140px;
+ 
+  
+}
+#post_show_style{
+    
+}
+
+#logo{
+    
+}

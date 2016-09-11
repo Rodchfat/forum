@@ -1,2 +1,5 @@
 %h3=comment.comment
-%h3=comment.user_id
+%h3=comment.user.email
+=link_to "Delete", [comment.post, comment], method: :delete, data: {confir: "are you sure"}
+|
+=link_to "Eidt", edit_post_comment_path(comment.post, comment)
