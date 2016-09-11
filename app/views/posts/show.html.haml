@@ -2,6 +2,15 @@
 %p=@post.title
 %p=@post.content
 %br
+ #Comments
+ %h3=@post.comments.count
+ = render @post.comments
+
+%h3 Reply To comment
+= render 'comments/form'
+
+ 
+
 =link_to "Home", root_path
 |
 =link_to "Edit", edit_post_path
